@@ -1,0 +1,58 @@
+/* section.css */
+
+.section__heading {
+    color: rgb(3, 114, 46);
+    margin-bottom: 10px;
+}
+
+.section {
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border: 8px double rgb(77, 0, 0);
+    border-radius: 100px;
+    background-color: rgb(33, 36, 36);
+}
+
+.section--dark {
+    color: rgb(0, 0, 0);
+    border-color: rgb(29, 163, 240);
+    background-color: rgb(208, 252, 252);
+}
+
+.section__imageDescription {
+    color: rgb(187, 187, 187);
+}
+
+.section__imageDescription--dark {
+    color: rgb(39, 38, 38);
+}
+
+.section__image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.section__image--horizontal {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.section__goal {
+    color: rgb(199, 31, 185);
+}
+
+.section__subHeading {
+    color: rgb(4, 158, 4);
+    margin: 15px auto;
+}
+
+.container {
+    overflow-x: auto;
+}

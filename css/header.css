@@ -1,0 +1,30 @@
+/* header.css */
+
+.header__button {
+    background-color: rgb(179, 179, 179);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: inset 0px 0px 20px 5px rgb(18, 19, 19);
+    font-size: 14px;
+    color: rgb(223, 223, 223);
+    margin-top: 20px;
+}
+
+.header__button--light {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 30px -5px rgb(22, 165, 165);
+    color: rgb(17, 17, 17);
+}
+
+.header__button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.header__button--light:hover {
+    background-color: rgb(190, 245, 245);
+}
+
+.header__title {
+    color: rgb(221, 21, 21);
+}

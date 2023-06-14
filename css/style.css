@@ -1,0 +1,28 @@
+/* style.css */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(18, 19, 19);
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.body--light {
+    background-color: rgb(189, 241, 241);
+}
+
+button {
+    cursor: pointer;
+}

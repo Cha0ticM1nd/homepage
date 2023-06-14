@@ -1,0 +1,31 @@
+/* navigation.css */
+
+.navigation__list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.navigation__link {
+    color: rgb(3, 114, 46);
+    border-radius: 10px;
+    padding: 3px 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation__link:hover {
+    background-color: rgb(33, 36, 36);
+}
+
+.navigation__link--light:hover {
+    background-color: rgb(208, 252, 252);
+}
+
+.navigation__splitter {
+    color: rgb(150, 21, 21);
+    margin: 2px 0;
+    font-weight: bold;
+}
