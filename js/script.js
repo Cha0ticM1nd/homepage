@@ -1,32 +1,46 @@
-console.log("Hello everyone!");
+{
+  const welcome = () => {
+    console.log("Hello everyone!");
+  };
 
-let headerButton = document.querySelector(".js-button");
-let body = document.querySelector(".body");
-let section = document.querySelectorAll(".section");
-let sectionImageDescription = document.querySelectorAll(".js-imageDescription");
-let themeName = document.querySelector(".js-themeNameChange");
-let navigationLink = document.querySelectorAll(".js-navigationLink");
-let footerLink = document.querySelector(".js-footerLink");
-let footerText = document.querySelector(".js-footerText");
+  const toggleTheme = () => {
+    const body = document.querySelector(".body");
+    const section = document.querySelectorAll(".section");
+    const sectionImageDescription = document.querySelectorAll(".js-imageDescription");
+    const themeName = document.querySelector(".js-themeNameChange");
+    const navigationLink = document.querySelectorAll(".js-navigationLink");
+    const footerLink = document.querySelector(".js-footerLink");
+    const footerText = document.querySelector(".js-footerText");
 
-headerButton.addEventListener("click", () => {
-  themeName.innerText = body.classList.contains("body--light")
-    ? "Jasny"
-    : "Ciemny";
+    body.classList.toggle("body--light");
 
-  headerButton.classList.toggle("header__button--light");
+    headerButton.classList.toggle("header__button--light");
 
-  body.classList.toggle("body--light");
+    themeName.innerText = body.classList.contains("body--light")
+      ? "Jasny"
+      : "Ciemny";
 
-  sectionImageDescription.forEach((sectionImageDescription) =>
-    sectionImageDescription.classList.toggle("section__imageDescription--dark")
-  );
+    sectionImageDescription.forEach((sectionImageDescription) =>
+      sectionImageDescription.classList.toggle("section__imageDescription--dark")
+    );
 
-  section.forEach((section) => section.classList.toggle("section--dark"));
+    section.forEach((section) => section.classList.toggle("section--dark"));
 
-  navigationLink.forEach((navigationLink) => navigationLink.classList.toggle("navigation__link--light"));
+    navigationLink.forEach((navigationLink) => navigationLink.classList.toggle("navigation__link--light"));
 
-  footerLink.classList.toggle("footer__link--light");
+    footerLink.classList.toggle("footer__link--light");
 
-  footerText.classList.toggle("footer__text--dark");
-});
+    footerText.classList.toggle("footer__text--dark");
+  };
+
+  const headerButton = document.querySelector(".js-button");
+
+  const init = () => {
+    headerButton.addEventListener("click", toggleTheme);
+
+    welcome();
+  };
+
+  init();
+}
+
