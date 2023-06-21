@@ -1,13 +1,13 @@
 console.log("Hello everyone!");
 
-let headerButton = document.querySelector(".header__button");
+let headerButton = document.querySelector(".js-button");
 let body = document.querySelector(".body");
 let section = document.querySelectorAll(".section");
-let sectionImageDescription = document.querySelectorAll(".section__imageDescription");
-let themeName = document.querySelector(".themeName");
-let navigationLink = document.querySelectorAll(".navigation__link");
-let footerLink = document.querySelector(".footer__link");
-let footerText = document.querySelector(".footer__text");
+let sectionImageDescription = document.querySelectorAll(".js-imageDescription");
+let themeName = document.querySelector(".js-themeNameChange");
+let navigationLink = document.querySelectorAll(".js-navigationLink");
+let footerLink = document.querySelector(".js-footerLink");
+let footerText = document.querySelector(".js-footerText");
 
 headerButton.addEventListener("click", () => {
   themeName.innerText = body.classList.contains("body--light")
